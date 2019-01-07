@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="제목" />
+
+        <EditText
+            android:id="@+id/faq_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/faq_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcdcdc"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/faq_canleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:text="취소" />
+
+        <Button
+            android:id="@+id/faq_okBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:text="확인" />
+    </LinearLayout>
+
+
+</android.widget.LinearLayout>

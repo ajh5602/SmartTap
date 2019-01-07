@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yeonkyung.smarttap8">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo9"
+        android:label="DIG"
+        android:roundIcon="@drawable/logo9"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 스플래시 액티비티 -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Equi_List" />
+        <activity android:name=".Equi_List_add" />
+        <activity android:name=".Equi_List_detail" />
+        <activity android:name=".Faq_List_add" />
+        <activity android:name=".Multi_list" />
+        <activity android:name=".Reservation_list" />
+        <activity android:name=".Reservation_add" />
+        <activity android:name=".Reservation_detail" />
+        <activity android:name=".Multi_detail" />
+        <activity android:name=".Multi_add" />
+        <activity android:name=".Equi_Month"/>
+    </application>
+
+</manifest>
